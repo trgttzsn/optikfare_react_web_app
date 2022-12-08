@@ -28,7 +28,7 @@ const HomeSlider = () => {
       Object.entries(sliderData).map( ([key, name], i) => {
         if(i === index){
           return(
-          <a key={name.baslik} href={name.link} target={name.link_target}>                  
+          <a key={name.baslik} href={name.link}>                  
             <div onMouseEnter={ () => handleMouseOver(i) } onMouseLeave={ () => handleMouseOut(i)} style={{ backgroundImage:"url('https://optikfare.com.tr/images/ana-slider/"+name.resim+"')" }}>
               <div className='sliderInfo' style={{ top: isOver[i] ? (position === "center") ? '75%': '50%' : (position === "center") ? '100%': '100%' }}>
               <h4>{name.baslik}</h4>
